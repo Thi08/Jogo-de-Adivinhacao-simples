@@ -1,0 +1,19 @@
+from random import randint
+
+nome_user = input("Olá jogador, digite seu nome: ")
+print(f"Certo, {nome_user}, tente adivinhar qual número de 1 a 50 eu estou pensando.")
+
+numero_pensado = randint(1,50)
+numero_tentativas = 3
+
+for tentativa in range (1,numero_tentativas + 1):
+    numero_escolhido = int(input("Escolha um número: "))
+    if numero_pensado == numero_escolhido:
+        print(f"Parabéns, você acertou em {numero_tentativas} tentativas")
+        break
+    elif tentativa + 1 > numero_tentativas:
+        print(F"Não foi dessa vez. O número pensado era {numero_pensado}. Obrigado por jogar!")
+    elif numero_pensado > numero_escolhido:
+        print("Tente um número maior")
+    elif numero_pensado < numero_escolhido: 
+        print("Tente um numero menor")
