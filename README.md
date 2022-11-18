@@ -1,1 +1,1 @@
-# Jogo-de-Adivinha-o-simples
+# Jogo-de-Adivinhacao-simples
